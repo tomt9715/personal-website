@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace https://tomthomas.example with the real domain once the site is hosted. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://tomthomas.example/index.html</loc></url>
+  <url><loc>https://tomthomas.example/about.html</loc></url>
+  <url><loc>https://tomthomas.example/education.html</loc></url>
+  <url><loc>https://tomthomas.example/clinical-experience.html</loc></url>
+  <url><loc>https://tomthomas.example/certifications.html</loc></url>
+  <url><loc>https://tomthomas.example/now.html</loc></url>
+  <url><loc>https://tomthomas.example/contact.html</loc></url>
+</urlset>
