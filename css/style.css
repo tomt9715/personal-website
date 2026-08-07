@@ -43,6 +43,7 @@
   --page-width: 72rem;
   --radius: 6px;
   --border-width: 1px;
+  --shadow-hover: 0 4px 14px rgba(31, 41, 33, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -63,6 +64,8 @@
     --status-planned-text: #e0c493;
     --status-goal-bg: #2a2436;
     --status-goal-text: #c9baE8;
+
+    --shadow-hover: 0 4px 14px rgba(0, 0, 0, 0.45);
   }
 }
 
@@ -441,6 +444,7 @@ button {
 }
 
 .card {
+  position: relative;
   background: var(--color-surface);
   border: var(--border-width) solid var(--color-border);
   border-radius: var(--radius);
@@ -448,6 +452,13 @@ button {
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.card:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
 }
 
 .card h3 {
@@ -467,6 +478,15 @@ button {
   margin-top: var(--space-2);
 }
 
+/* Stretches the card's single link to cover the whole card, so hovering
+   anywhere on the card (not just the link text) shows it's clickable. */
+.card .card-link::after,
+.entry-linked .card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
 /* ==========================================================================
    Entry blocks (rotations, certifications, "now" cards, etc.)
    ========================================================================== */
@@ -477,6 +497,19 @@ button {
   background: var(--color-surface);
   padding: var(--space-4);
   margin-bottom: var(--space-4);
+}
+
+/* Modifier for entries whose single link should make the whole card
+   clickable (see .card .card-link::after above for the stretched-link rule). */
+.entry-linked {
+  position: relative;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.entry-linked:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
 }
 
 .timeline {
