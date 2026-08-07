@@ -14,7 +14,7 @@
   --color-accent-hover: #2c4d34;
   --color-accent-soft: #e7efe6;
 
-  /* Status pills (certifications, etc.) — kept distinct from the accent hue */
+  /* Status pills (certifications, etc.): kept distinct from the accent hue */
   --status-progress-bg: #e6eef5;
   --status-progress-text: #2c5a86;
   --status-planned-bg: #f2ece2;
