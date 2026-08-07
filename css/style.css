@@ -4,19 +4,19 @@
 
 :root {
   /* Color */
-  --color-bg: #faf9f6;
-  --color-bg-alt: #f1efea;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f6f8f5;
   --color-surface: #ffffff;
-  --color-text: #1e2624;
-  --color-text-muted: #5b6663;
-  --color-border: #e2ded4;
-  --color-accent: #1f5f66;
-  --color-accent-hover: #163f44;
-  --color-accent-soft: #e6eeee;
+  --color-text: #202420;
+  --color-text-muted: #5e655c;
+  --color-border: #e2e6df;
+  --color-accent: #3f6b4a;
+  --color-accent-hover: #2c4d34;
+  --color-accent-soft: #e7efe6;
 
-  /* Status pills (certifications, etc.) */
-  --status-progress-bg: #eef2e2;
-  --status-progress-text: #4c5c2a;
+  /* Status pills (certifications, etc.) — kept distinct from the accent hue */
+  --status-progress-bg: #e6eef5;
+  --status-progress-text: #2c5a86;
   --status-planned-bg: #f2ece2;
   --status-planned-text: #6b5230;
   --status-goal-bg: #eee9f5;
@@ -47,18 +47,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #15191a;
-    --color-bg-alt: #1c2122;
-    --color-surface: #1c2122;
-    --color-text: #ecebe7;
-    --color-text-muted: #a3aba8;
-    --color-border: #333a3b;
-    --color-accent: #6fb3ac;
-    --color-accent-hover: #8fc9c3;
-    --color-accent-soft: #22302f;
+    --color-bg: #141815;
+    --color-bg-alt: #1a1f1b;
+    --color-surface: #1a1f1b;
+    --color-text: #e9ece7;
+    --color-text-muted: #a3aa9f;
+    --color-border: #313830;
+    --color-accent: #7fb894;
+    --color-accent-hover: #9bcaad;
+    --color-accent-soft: #1f2b22;
 
-    --status-progress-bg: #2a3320;
-    --status-progress-text: #c3d69f;
+    --status-progress-bg: #1f2d3a;
+    --status-progress-text: #9dc0e0;
     --status-planned-bg: #332b1e;
     --status-planned-text: #e0c493;
     --status-goal-bg: #2a2436;
