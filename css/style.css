@@ -540,6 +540,31 @@ button {
   margin-top: var(--space-2);
 }
 
+.entry-title-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.app-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.65rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+
+.tnc-icon {
+  background: #0e9a8f;
+  color: #ffffff;
+}
+
 /* ==========================================================================
    Footer
    ========================================================================== */
