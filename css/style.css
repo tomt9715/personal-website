@@ -312,7 +312,7 @@ button {
   background: var(--color-bg-alt);
   border: var(--border-width) solid var(--color-border);
   border-radius: var(--radius);
-  padding: var(--space-5);
+  padding: var(--space-4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -320,8 +320,8 @@ button {
 }
 
 .hero-photo-frame img {
-  width: 55%;
-  max-width: 12rem;
+  width: 100%;
+  max-width: 19rem;
   height: auto;
   border-radius: var(--radius);
   display: block;
