@@ -610,7 +610,7 @@ button {
   font-size: 0.9rem;
 }
 
-.site-footer .container {
+.site-footer-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -623,6 +623,12 @@ button {
 
 .site-footer a:hover {
   color: var(--color-accent);
+}
+
+.footer-credit {
+  margin: var(--space-3) 0 0;
+  font-size: 0.8rem;
+  opacity: 0.75;
 }
 
 /* ==========================================================================
